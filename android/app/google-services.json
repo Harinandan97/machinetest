@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "441179849873",
+    "project_id": "fortest-a113b",
+    "storage_bucket": "fortest-a113b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441179849873:android:5e7f094cdb7fdbf26b2b30",
+        "android_client_info": {
+          "package_name": "com.example.for_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaCLeD3PXww_aC39RrGpBDEnYSMyIGKao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
