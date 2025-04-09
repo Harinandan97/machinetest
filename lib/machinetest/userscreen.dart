@@ -4,7 +4,9 @@ import 'package:for_test/machinetest/usertile.dart';
 import 'package:get/get.dart';
 
 import 'details.dart';
-
+void main() {
+  runApp(GetMaterialApp(home: UserListScreen()));
+}
 class UserListScreen extends StatelessWidget {
   final UserController controller = Get.put(UserController());
 
@@ -22,11 +24,13 @@ class UserListScreen extends StatelessWidget {
               itemCount: controller.userList.length,
               itemBuilder: (context, index) {
                 final user = controller.userList[index];
-                return GestureDetector(
-                  onTap: () {
-                    Get.to(() => UserDetailScreen(user: user));
-                  },
-                  child: UserTile(user: user),
+                return Card(color: Colors.yellow[100],
+                  child: GestureDetector(
+                    onTap: () {
+                      Get.to(() => UserDetailScreen(user: user));
+                    },
+                    child: UserTile(user: user),
+                  ),
                 );
               },
             ),

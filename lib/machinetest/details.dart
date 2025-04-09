@@ -14,22 +14,19 @@ class UserDetailScreen extends StatelessWidget {
       appBar: AppBar(title: Text(user.name)),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
-        child: Card(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          elevation: 4,
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                InfoRow(icon: Icons.email, label: "Email", value: user.email),
-                Divider(),
-                InfoRow(icon: Icons.location_city, label: "City", value: user.address.city),
-                InfoRow(icon: Icons.home, label: "Street", value: user.address.street),
-                InfoRow(icon: Icons.confirmation_number, label: "Number", value: user.address.number.toString()),
-                InfoRow(icon: Icons.pin_drop, label: "Zipcode", value: user.address.zipcode),
-              ],
-            ),
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Email: ${user.email}"),
+              Text("City: ${user.address.city}"),
+              Text("Street: ${user.address.street}"),
+              Text("Number: ${user.address.number}"),
+              Text("Zipcode: ${user.address.zipcode}"),
+
+
+            ],
           ),
         ),
       ),
